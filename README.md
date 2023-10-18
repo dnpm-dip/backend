@@ -19,8 +19,10 @@ Umbrella project for the modules/projects composing the DNPM:DIP backend.
 
 * [HGNC Gene Set](https://github.com/KohlbacherLab/dnpm-dip-hgnc-catalog): CodeSystem provider implementation for [HGNC Gene Set](https://www.genenames.org/download/statistics-and-files/)
 
+* [Catalog Service](https://github.com/KohlbacherLab/dnpm-dip-catalog-service): Component to load all CodeSystems made dynamically discoverable/available via the Service Provider Interface (SPI) Pattern (see [CodeSystemProvider](https://github.com/KohlbacherLab/dnpm-dip-core/blob/main/src/main/scala/de/dnpm/dip/coding/CodeSystemProvider.scala)) 
 
-## Use Case Modules
+
+## Use Case Modules/Services
 
 ### Rare Diseases (RD)
 
