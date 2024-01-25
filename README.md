@@ -8,7 +8,7 @@ Umbrella project for the modules/projects composing the DNPM:DIP backend.
 
 * [Service Base](https://github.com/KohlbacherLab/dnpm-dip-service-base): Base components for use-case specific service implementations
 
-* [Connector Base](https://github.com/KohlbacherLab/dnpm-dip-connector-base): Base implementation of abstract Connector defined in [service base](https://github.com/KohlbacherLab/dnpm-dip-service-base)
+* [Connector Base](https://github.com/KohlbacherLab/dnpm-dip-connector-base): Base implementations of abstract Connector defined in [service base](https://github.com/KohlbacherLab/dnpm-dip-service-base)
 
 
 ## Catalog / CodeSystem Components
@@ -19,16 +19,24 @@ Umbrella project for the modules/projects composing the DNPM:DIP backend.
 
 * [HGNC Gene Set](https://github.com/KohlbacherLab/dnpm-dip-hgnc-catalog): CodeSystem provider implementation for [HGNC Gene Set](https://www.genenames.org/download/statistics-and-files/)
 
-* [Catalog Service](https://github.com/KohlbacherLab/dnpm-dip-catalog-service): Component to load all CodeSystems made dynamically discoverable/available via the Service Provider Interface (SPI) Pattern (see [CodeSystemProvider](https://github.com/KohlbacherLab/dnpm-dip-core/blob/main/src/main/scala/de/dnpm/dip/coding/CodeSystemProvider.scala)) 
+* [Catalog Service](https://github.com/KohlbacherLab/dnpm-dip-catalog-service): Component to load all CodeSystemProvider plugins according to the Service Provider Interface (SPI) Pattern (see [CodeSystemProvider](https://github.com/KohlbacherLab/dnpm-dip-core/blob/main/src/main/scala/de/dnpm/dip/coding/CodeSystemProvider.scala)) 
 
 
-## Use Case Modules/Services
+## Use Case Modules
 
 ### Rare Diseases (RD)
 
-* [RD Model](https://github.com/KohlbacherLab/dnpm-dip-rd-model): RD Data Model and object generators, and CodeSystem provider implementation for [Human Phenotype Ontology](https://hpo.jax.org/app/) (HPO)
+* [RD Model](https://github.com/KohlbacherLab/dnpm-dip-rd-model): RD Domain/Data Model and object generators, together with CodeSystem provider implementations for [Human Phenotype Ontology](https://hpo.jax.org/app/) (HPO) and [Orphanet Rare Disease Ontology](https://www.orphadata.com/ordo/) (ORDO)
 
 * [RD Query Service](https://github.com/KohlbacherLab/dnpm-dip-rd-query-service): RD-specific implementation of Query Service from [service base](https://github.com/KohlbacherLab/dnpm-dip-service-base)
+
+
+### Molecular Tumor Board (MTB)
+
+* [MTB Model](https://github.com/KohlbacherLab/dnpm-dip-mtb-model): MTB Domain/Data Model and object generators
+
+* [MTB Query Service](https://github.com/KohlbacherLab/dnpm-dip-mtb-query-service): MTB-specific implementation of Query Service from [service base](https://github.com/KohlbacherLab/dnpm-dip-service-base)
+
 
 
 ## Backend Deployable
