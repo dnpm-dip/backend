@@ -2,6 +2,8 @@
 
 Umbrella project for the modules/projects composing the DNPM:DIP backend.
 
+For installation/operation instructions, see the [Deployment guide](https://github.com/dnpm-dip/deployment).
+
 ## Base Components
 
 * [Core](https://github.com/KohlbacherLab/dnpm-dip-core): Utilities, Base components for Coding management, Base domain modelling components
